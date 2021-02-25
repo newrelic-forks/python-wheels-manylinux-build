@@ -1,6 +1,9 @@
-FROM quay.io/pypa/manylinux2010_x86_64
+ARG CONTAINER_PLAT=manylinux2010_x86_64
+ARG CONTAINER_VERSION=latest
 
-ENV PLAT manylinux2010_x86_64
+FROM quay.io/pypa/$CONTAINER_PLAT:$CONTAINER_VERSION
+
+ENV PLAT=manylinux2010_x86_64
 
 COPY entrypoint.sh /entrypoint.sh
 
