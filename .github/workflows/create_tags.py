@@ -19,8 +19,8 @@ def main():
     files_to_edit = ["./Dockerfile"]
 
     # Setup Git
-    subprocess.call(["git", "config", "--global", "user.email", '"ralfg@hotmail.be"'])
-    subprocess.call(["git", "config", "--global", "user.name", '"Ralf Gabriels"'])
+    subprocess.call(["git", "config", "--global", "user.email", '"opensource@newrelic.com"'])
+    subprocess.call(["git", "config", "--global", "user.name", '"newrelic"'])
 
     # Checkout new branch
     subprocess.call(["git", "checkout", "-b", branch])
